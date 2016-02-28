@@ -3,12 +3,12 @@
     "Author Name" : "theMiddle",
     "Rule Name" : "Shellshock (Headers)",
     "Severity Level" : "Recommended",
-    "IF source IP address is" : ".*",
-    "IF Method is" : ".*",
-    "URL path name" : ".*",
-    "Query string" : ".*",
-    "Headers" : "(referer|user\-agent|host): \(\)\s*\t*\{.*;\s*\}\s*;",
-    "Request Body" : ".*",
     "Descriptions" : "Shellshock, also known as Bashdoor, is a family of security bugs in the widely used Unix Bash shell, the first of which was disclosed on 24 September 2014. Many Internet-facing services, such as some web server deployments, use Bash to process certain requests, allowing an attacker to cause vulnerable versions of Bash to execute arbitrary commands. This can allow an attacker to gain unauthorized access to a computer system. (CVE-2014-6271, CVE-2014-6277, CVE-2014-6278, CVE-2014-7169, CVE-2014-7186, CVE-2014-7187)",
+    "src" : ".*",
+    "method" : ".*",
+    "path_name" : ".*",
+    "query_string" : ".*",
+    "body" : ".*",
+    "headers" : "(referer|user\\-agent|host)\\: \\(\\)\\s*\\t*\\{.*;\\s*\\}\\s*;"
   }
 }
