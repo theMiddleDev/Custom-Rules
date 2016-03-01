@@ -1,0 +1,14 @@
+{
+  "TMWC-05.91454063907" : {
+    "Author Name" : "theMiddle",
+    "Rule Name" : "PHP I/O streams",
+    "Severity Level" : "Recommended",
+    "Descriptions" : "PHP provides a number of miscellaneous I/O streams that allow access to PHP's own input and output streams, the standard input, output and error file descriptors, in-memory and disk-backed temporary file streams, and filters that can manipulate other file resources as they are read from and written to. This rule prevent to exploit a vulnerable code that reads from file but doesn't sanitizes the user input",
+    "src" : ".*",
+    "method" : ".*",
+    "path_name" : ".*",
+    "query_string" : "php\\:\\/\\/(stdin|stdout|stderr|input|output|fd|memory|temp|filter|stream)",
+    "body" : ".*",
+    "headers" : ".*"
+  }
+}
